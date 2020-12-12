@@ -18,8 +18,9 @@ contract Election {
     //event votedEvent(uint256 indexed _candidateId);
 
     constructor() public {
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
+        addCandidate("John Wick");
+        addCandidate("Browney Jr");
+        addCandidate("Helena Williams");
     }
 
     function addCandidate(string memory _name) private {

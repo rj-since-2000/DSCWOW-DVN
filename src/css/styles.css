@@ -63,6 +63,7 @@ body {
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
+    z-index: 10;
 }
 
 #content {
@@ -74,14 +75,24 @@ th {
     color: #60a9ff;
 }
 
+tr {
+    border: 1px solid;
+    border: 1px solid rgb(163, 163, 167);
+}
+
 h1 {
     font-weight: bolder;
     font-size: x-large;
 }
 
 button {
-    margin: 25px;
+    margin: 15px;
     width: 10rem;
+}
+
+label {
+    padding-bottom: 1rem;
+    font-weight: 600;
 }
 
 .form-group {
@@ -97,4 +108,31 @@ button {
 
 #tag {
     color: darkorange;
+}
+
+#voteStatus {
+    padding: 3rem;
+    text-transform: none;
+    background-color: #dff3e3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-decoration: rgb(4, 247, 166);
+    color: darkgreen;
+}
+
+#myAccount {
+    padding-top: 1rem;
+    color: dimgray;
+}
+
+#accountTag {
+    font-weight: bold;
+    font-size: medium;
+}
+
+#note {
+    font-size: small;
+    color: red;
+    text-transform: none;
 }

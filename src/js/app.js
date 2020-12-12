@@ -64,7 +64,7 @@ App = {
         web3.eth.getCoinbase(function (err, account) {
             if (err === null) {
                 App.account = account;
-                $("#accountAddress").html("Your Account: " + account);
+                $("#accountAddress").html("<span id='accountTag'>Your Account :</span> <span id='myAccount'>" + account + "</span>");
             }
         });
 
@@ -86,7 +86,7 @@ App = {
                     var voteCount = candidate[2];
 
                     // Render candidate Result
-                    var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
+                    var candidateTemplate = "<tr><td>" + id + "</td><td>" + name + "</td><td>" + voteCount + "</td></tr>"
                     candidatesResults.append(candidateTemplate);
 
                     // Render candidate ballot option
@@ -99,6 +99,7 @@ App = {
             // Do not allow a user to vote
             if (hasVoted) {
                 $('form').hide();
+                $("#voteStatus").show();
             }
             loader.hide();
             content.show();

@@ -38,9 +38,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Votes</th>
+                <th scope="col">#ID</th>
+                <th scope="col">Candidate Name</th>
+                <th scope="col">Vote Count</th>
               </tr>
             </thead>
             <tbody id="candidatesResults">
@@ -54,9 +54,11 @@
               </select>
             </div>
             <button type="submit" class="btn btn-primary">Vote</button>
+            <div id="note">Please note that vote once recorded cannot be changed!</div>
             <hr />
           </form>
-          <p id="accountAddress" class="text-center"></p>
+          <div id="voteStatus" style="display: none;">Your vote has been recorded.</div>
+          <div id="accountAddress" class="text-center"></div>
         </div>
       </div>
     </div>
